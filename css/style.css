@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    height: 100vh;
+    
+}
+#logo img{
+    width: 6rem;
+    float: left;
+}
+#navbar{
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    z-index:300;
+}
+#insidenav{
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navlist{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    justify-content: center;
+}
+#navlist a{
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+}
+#bookNav{
+    background-color: #fed133;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem 1rem;
+    color: black;
+    font-weight: 700;
+}
+#bookNav:hover{
+    background-color: transparent;
+    border: 3px solid #fed133;
+}
+#headerScreen{
+    height: calc(100vh - 5rem);
+    background-color: #fed133;
+    /*background-image: linear-gradient(90deg,#fed133, #ffd951);*/
+    margin: 0 1rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+#scrnandtext{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+#phone{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#phone img{
+    width: 33rem;
+}
+#text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 35rem;
+    margin-right: 2rem;
+}
+#text h2{
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2d3436;
+}
+#text p{
+    margin-bottom: 2rem;
+    color: #2d3436;
+}
+#book2{
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+#book2:hover{
+    background-color: transparent;
+    border: 3px solid black;
+}
+#weworked{
+    font-weight: 700;
+    color: rgb(145, 145, 145);
+    width: 14rem;
+    font-size: .9rem;
+}
+#workedWith{
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#worked{
+    display: flex;
+    font-weight: 900;
+    padding: 0 2rem;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+/**************          Steps            *************/
+#steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#thisone{
+    padding-bottom: 2rem;
+    color: rgb(43, 43, 43);
+}
+#divsteps{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+.stepdiv{
+    border:2px solid #eebe10;
+    height: 16rem;
+    width: 13rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+.stepdiv:hover{
+    transform: scale(1.1);
+}
+
+#stepsContain{
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stepsImage{
+    width: 80%;
+}
+.stepsHeader{
+    color: #fed133;
+    margin-top: 1rem;
+}
+#imgCont{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+#imgCont p{
+    margin-top: 1rem;
+}
+
+#imgDiv{
+    display: flex;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid white;
+    box-shadow:  1px 1px 5px #414141, 
+             -1px -1px 5px #a8a8a8;
+}
+#jms{
+    height: 21rem;
+}
+/**********************    Testimoials     ***************************/
+#testimonials{
+    height: calc(100vh - 10rem);
+    background-color:#fed133;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#testimonials h1{
+    background-color: white;
+    height: 1rem;
+}
+#videotest{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.reviewImg{
+    width: 24rem;
+}
+
+/**********************      Results       ***************************/
+#results{
+    background-color: #2d3436;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#resultImages{
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.rImage{
+    border-radius: 18px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    padding: .6rem;
+    border: 2px solid #fed133;
+}
+.rImage img:hover{
+    transform: scale(1.2);
+    filter: none;
+    -webkit-filter:none;
+}
+.rImage img{
+    border-radius: 15px;
+    transition: .3s ease-in-out;
+    -webkit-filter: grayscale(); /* Safari 6.0 - 9.0 */
+    filter: grayscale();
+}
+.rImage p{
+    margin-top: .6rem;
+}
+#resultsTitle{
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #fed133;
+    height: 10px;
+}
+#book3{
+    margin-top: 4rem;
+    background-color: #fed133;
+    padding: 1rem 2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s ease-in-out;
+}
+#book3:hover{
+    transform: scale(1.1);
+    background-color: white;
+}
+
+/**********************      Pricing       ***************************/
+#pricing{
+    height: 15rem;
+    background-color: #fed133;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#pricing h1{
+    font-weight: 900;
+}
+#btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+#ecomBtn{
+    background-color: black;
+    padding: 1.1rem 2rem;
+    border-radius: 10px;
+    margin-right: 4rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+#ecomBtn:hover{
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 3px solid black;
+    color: black;
+}
+#priceTitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+#priceDesc{
+    font-size: .8rem;
+}
+#leadBtn{
+    border: 3px solid black;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+#leadBtn:hover{
+    padding: 1.1rem 2rem;
+    background-color: black;
+    border: none;
+    color: white;
+}
